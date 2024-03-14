@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Buddy Bands</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: 0px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+.banner{
+        height:275px;
+        background-image:url("./Photos/bae.jpg" );
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0px 0px 20px 0px;
+    }
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">BUDDY BANDS</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  <div class="banner">
+  </div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="./Photos/13.jpg" style="width:100%" onclick="onClick(this)" alt="Watermelon Pattern">
+      <img src="./Photos/23.jpg" style="width:100%" onclick="onClick(this)" alt="Fishbone Chevron">
+      <img src="./Photos/16.jpg" style="width:100%" onclick="onClick(this)" alt="Border Polka Dot Chevron">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="./Photos/17.jpg" style="width:100%" onclick="onClick(this)" alt="Confetti Braclet">
+      <img src="./Photos/18.jpg" style="width:100%" onclick="onClick(this)" alt="Totoro Braclet">
+      <img src="./Photos/19.jpg" style="width:100%" onclick="onClick(this)" alt="The Cute Bunny">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="./Photos/20.jpg" style="width:100%" onclick="onClick(this)" alt="Reverse Diamond">
+      <img src="./Photos/21.jpg" style="width:100%" onclick="onClick(this)" alt="Red Panda Braclet">
+      <img src="./Photos/27.jpg" style="width:100%" onclick="onClick(this)" alt="Heart Braclet">
+    </div>
+    <div class="w3-quarter">
+        <img src="./Photos/25.jpg" style="width:100%" onclick="onClick(this)" alt="Rainbow Wave Braclet">
+        <img src="./Photos/28.jpg" style="width:100%" onclick="onClick(this)" alt="Twisted Chevron">
+        <img src="./Photos/26.jpg" style="width:100%" onclick="onClick(this)" alt="Checkers Braclet">
+      </div>
+  </div>
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="./index.html" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="./index.html" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="./Photos/DSC_0658.JPG" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>I'm KAVYA S JEVARGI</h4>
+      <p>It started when I was in 10th standard. I was watching you tube and suddenly saw a video that caught me. It was DIY friendship bracelet video tutorial. I wanted to try it because it was really cool. And then I bought threads required for the bracelets and did couple of bracelets with pearls and some other beads. And then I had to concentrate on my exams and I left knotting the bracelets. It was again during my engineering I thought of starting to knot again. I went to a shop and saw threads. The threads were so beautiful and I wanted to knot. Again I searched for the you tube tutorials for knotting. I want to mention this you tube channel,"MASHA KNOTS" where I learnt how to knot. I have knotted many bracelets till now and knotting makes me happy I don't care when people say it's waste of time to knot. I only want the other person to appreciate for, my love towards knotting.
+      </p>
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Do you want Braclets ideas? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+      <form action="https://formsubmit.co/jevargikavya@gmail.com" method="post" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+
+  
+  <div class="w3-black w3-center w3-padding-24">Handcrafted Charm ✨</div>
+
+
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
